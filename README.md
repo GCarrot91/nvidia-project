@@ -19,9 +19,7 @@ Here are the steps.
 
 ### The Process
 
-1. Create a new directory for this project to be placed in through SSH.
-2. In that file, download all the linked files/directories (except for the README.md obviously; you will also have to scp the zip file and then unzip it in the directory; you should also put this directory inside another directory called my-data).
-3. Also build the jetson-inference directory that will contain some necessary networks and other needed pieces by following this tutorial video by Nvidia:
+1. Build the jetson-inference directory that will contain some necessary networks and other needed pieces by following this tutorial video by Nvidia:
   a. sudo apt-get update
   b. sudo apt-get install git cmake libpython3-dev python3-numpy
   c. git clone --recursive https://github.com/dusty-nv/jetson-inference
@@ -32,10 +30,13 @@ Here are the steps.
   h. make -j$(nproc)
   i. sudo make install
   j. sudo ldconfig
-4. Return back to our original directory for our project.
-5. Set DATASET=my-data/asian_ethinicity
-6. Set NET=models/asian_ethinicity
-7. Run this command: imagenet.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chinese/01.JPG output_0.jpg
-8. You can additionally scp the file on to your home computer by the following commands:
+2. Create a new directory for this project to be placed in (not within jetson-inference).
+3. In the jetson-inference directory, download the zip file using scp and unzip the file (you can delete the zipped file now).
+4. Cd into the data directory (jetson-inference/python/training/classification/data) and move the asian_ethinicity file into our new directory & place that file inside a new directory within our project directory and name it "my-data."
+5. Go back to the jetson-inference directory and cd into the models directory. Move the entire directory over to our project directory.
+6. Set DATASET=my-data/asian_ethinicity
+7. Set NET=models/asian_ethinicity
+8. Run this command: imagenet.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chinese/01.JPG output_0.jpg
+9. You can additionally scp the file on to your home computer by the following commands:
   Windows: scp nvidia@192.168.55.1:/home/nvidia/nvidia-project/output_0.jpg C:\Users\<Username>\Desktop
   Mac: scp nvidia@192.168.55.1:/home/nvidia/nvidia-project/output_0.jpg ./
