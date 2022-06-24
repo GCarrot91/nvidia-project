@@ -10,7 +10,7 @@ I used the pre-trained ImageNet model and by using transfer-learning, I taught t
 
 ## Running this project
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
+1. Create a new directory for this project to be placed in.
+2. In that file, download all the linked files/directories (except for the README.md obviously).
 
 [View a video explanation here](video link)
