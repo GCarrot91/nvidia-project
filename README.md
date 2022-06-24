@@ -33,7 +33,7 @@ Here are the steps.
 2. Create a new directory for this project to be placed in (not within jetson-inference).
 3. In the jetson-inference directory, download the zip file using scp and unzip the file (you can delete the zipped file now).
 4. Cd into the data directory (jetson-inference/python/training/classification/data) and move the asian_ethinicity file into our new directory & place that file inside a new directory within our project directory and name it "my-data."
-5. Go back to the jetson-inference directory and cd into the models directory. Move the entire directory over to our project directory.
+5. Go back to the jetson-inference directory and cd into the models directory (jetson-inference/python/training/classification/models). Move the entire directory over to our project directory.
 6. Set DATASET=my-data/asian_ethinicity
 7. Set NET=models/asian_ethinicity
 8. Run this command: imagenet.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chinese/01.JPG output_0.jpg
