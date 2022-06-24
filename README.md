@@ -12,5 +12,6 @@ I used the pre-trained ImageNet model and by using transfer-learning, I taught t
 
 1. Create a new directory for this project to be placed in.
 2. In that file, download all the linked files/directories (except for the README.md obviously).
+3. Also build the jetson-inference directory that will contain some necessary networks and other needed pieces by following this tutorial video by Nvidia:
 
 [View a video explanation here](video link)
