@@ -1,4 +1,4 @@
-# Project Name: Asian Ethnicity Classifier
+# Asian Ethnicity Classifier
 
 This model will (attempt to) classify the input pictures into 4 different Asian ethinicities (Chinese, Japanese, Korean, and Vietnamese). *Please note that I accidentally miss-spelt "ethnicity" as "ethinicity" on my directories/files.*
 
