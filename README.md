@@ -8,7 +8,7 @@ This model will (attempt to) classify the input pictures into 4 different Asian 
 
 I used the pre-trained ImageNet model and by using transfer-learning, I taught the model to classify those 4 classes (Chinese, Japanese, Korean, and Vietnamese). Since it was pretty hard to find datasets, I was only able to train for each class with around 80-90 images, so it's accuracy is not the greatest.
 
-## Running this project
+## Running This Project
 
 1. Create a new directory for this project to be placed in through SSH.
 2. In that file, download all the linked files/directories (except for the README.md obviously).
