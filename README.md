@@ -11,7 +11,7 @@ I used the pre-trained ImageNet model and by using transfer-learning, I taught t
 ## Running This Project
 
 1. Create a new directory for this project to be placed in through SSH.
-2. In that file, download all the linked files/directories (except for the README.md obviously).
+2. In that file, download all the linked files/directories (except for the README.md obviously; you will also have to scp the zip file and then unzip it in the directory; you should also put this directory inside another directory called my-data).
 3. Also build the jetson-inference directory that will contain some necessary networks and other needed pieces by following this tutorial video by Nvidia:
   a. sudo apt-get update
   b. sudo apt-get install git cmake libpython3-dev python3-numpy
