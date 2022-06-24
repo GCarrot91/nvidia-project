@@ -35,7 +35,7 @@ Here are the steps.
 4. Return back to our original directory for our project.
 5. Set DATASET=my-data/asian_ethinicity
 6. Set NET=models/asian_ethinicity
-7. Run this command: imagenet.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/japanese/01.jpg output_0.jpg
+7. Run this command: imagenet.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chinese/01.JPG output_0.jpg
 8. You can additionally scp the file on to your home computer by the following commands:
   Windows: scp nvidia@192.168.55.1:/home/nvidia/nvidia-project/output_0.jpg C:\Users\<Username>\Desktop
   Mac: scp nvidia@192.168.55.1:/home/nvidia/nvidia-project/output_0.jpg ./
