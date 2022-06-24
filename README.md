@@ -6,7 +6,7 @@ This model will (attempt to) classify the input pictures into 4 different Asian 
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+I used the pre-trained ImageNet model and by using transfer-learning, I taught the model to classify those 4 classes (Chinese, Japanese, Korean, and Vietnamese). Since it was pretty hard to find datasets, I was only able to train for each class with around 80-90 images, so it's accuracy is not the greatest.
 
 ## Running this project
 
