@@ -10,6 +10,15 @@ I used the pre-trained ImageNet model and by using transfer-learning, I taught t
 
 ## Running This Project
 
+Here are the steps.
+
+### Prerequistes
+
+1. You're going to obviously need a Jetson Nano with a proper headless setup (there are videos by Nvidia that you can view) and will need some sort of a personal computer to SSH with.
+2. Please have a basic understanding of navigating through the linux terminal.
+
+### The Process
+
 1. Create a new directory for this project to be placed in through SSH.
 2. In that file, download all the linked files/directories (except for the README.md obviously; you will also have to scp the zip file and then unzip it in the directory; you should also put this directory inside another directory called my-data).
 3. Also build the jetson-inference directory that will contain some necessary networks and other needed pieces by following this tutorial video by Nvidia:
